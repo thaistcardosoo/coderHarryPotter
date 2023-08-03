@@ -7,57 +7,132 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Início Header onde estará a logo, o input:text e os ícones-->
   <header>
-    <!-- Navbar, onde estará a logo, o input:text e as categorias -->
-    <nav class="header navbar">
-
-      <div class="logo">
+      <div id="logo">
         <img src="assets/logoHP2.jpg" alt="Logo do e-commerce Harry Potter com fundo preto e a escrita dourada">
       </div>
 
       <div class="searchBar">
-        <input type="text" name="" id="" placeholder="">
+        <input type="text" name="" id="" placeholder="   O que você procura?">
       </div>
 
-      <div class="login">
-        <div class="iconPeople">
-          <img src="assets/user_6177790.png" alt="">
+      <div class="icon">
+        <div class="login-icon">
+          <svg width="65" height="100" viewBox="0 0 110 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.5001 75.4843L21.4976 75.6419L21.586 75.7724C28.7715 86.382 41.0797 93.38 55 93.38C68.9203 93.38 81.2285 86.382 88.414 75.7724L88.5024 75.6419L88.4999 75.4843C88.4559 72.6144 86.9591 70.1107 84.6515 67.9915C82.3455 65.8738 79.1929 64.1033 75.7323 62.6837C68.8127 59.845 60.5396 58.36 55 58.36C49.433 58.36 41.1599 59.8449 34.2469 62.6837C30.7896 64.1035 27.6421 65.874 25.3404 67.9918C23.037 70.1112 21.5441 72.6148 21.5001 75.4843ZM0.5 54C0.5 24.4768 24.9075 0.5 55 0.5C85.0925 0.5 109.5 24.4768 109.5 54C109.5 83.5232 85.0925 107.5 55 107.5C24.9075 107.5 0.5 83.5232 0.5 54ZM72 32.4C72 23.1512 64.3975 15.7 55 15.7C45.6025 15.7 38 23.1512 38 32.4C38 41.6488 45.6025 49.1 55 49.1C64.3975 49.1 72 41.6488 72 32.4Z" fill="white" stroke="black"/>
+          </svg>
         </div>
 
-        <div class="iconCart">
-          <img src="assets/shopping-cart_833314.png" alt="">
+        <div class="cart-icon">
+          <svg width="65" height="100" viewBox="0 0 99 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M71.9958 55C75.7069 55 78.9727 52.95 80.655 49.85L98.3695 17.4C100.2 14.1 97.8252 10 94.0646 10H20.8318L16.1805 0H0V10H9.89633L27.7097 47.95L21.0297 60.15C17.4175 66.85 22.1678 75 29.689 75H89.0669V65H29.689L35.132 55H71.9958ZM25.5325 20H85.6527L71.9958 45H37.2597L25.5325 20ZM29.689 80C24.246 80 19.8421 84.5 19.8421 90C19.8421 95.5 24.246 100 29.689 100C35.132 100 39.5853 95.5 39.5853 90C39.5853 84.5 35.132 80 29.689 80ZM79.1706 80C73.7276 80 69.3238 84.5 69.3238 90C69.3238 95.5 73.7276 100 79.1706 100C84.6136 100 89.0669 95.5 89.0669 90C89.0669 84.5 84.6136 80 79.1706 80Z" fill="white"/>
+            </svg>
         </div>
       </div>
-
-    </nav>
-
-    <div class="categories">
-      <ul>
-        <li>Bonecos</li>
-        <li>Varinhas</li>
-        <li>Capas</li>
-        <li>Acessórios</li>
-        <li>Moletom</li>
-      </ul>
-    </div>
 
   </header>
+  <!-- Fim do Header -->
 
   <main class="container">
+        <!-- Categorias de busca de produtos -->
+        <div id="show-categories">
+          <ul>
+            <li>Bonecos</li>
+            <li>Varinhas</li>
+            <li>Capas</li>
+            <li>Acessórios</li>
+            <li>Moletom</li>
+          </ul>
+        </div>
+        <!-- Fim das categorias de busca de produtos -->
+
     <!-- Onde ficarão os banners e cards -->
     <div class="banners">
-
+      <h1 style="color: blue;">Aqui serão posicionados os banners</h1>
     </div>
 
-    <div class="card-1">
+    <!-- Início das sessões de promoções, destaques e lançamentos -->
+    <section class="section-title">
+      <div class="promotions">
+        <h2>Promoções da Semana</h2>
+        <div class="card">
+          <div class="img-card">
 
-    </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section-title">
+      <div class="highlights">
+        <h2>Destaques</h2>
+        <div class="card">
+          <div class="img-card">
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section-title">
+      <div class="releases">
+         <h2>Lançamentos</h2>
+         <div class="card">
+          <div class="img-card">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fim das sessões de promoções, destaques e lançamentos -->
+    
   </main>
 
-  <footer class="footer">
+  <!-- Início Footer -->
+  <footer>
+    <div id="link-footer">
+      <div class="list-footer">
+        <div class="institutional">
+          <h3>Institucional</h3>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Sobre nós</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Políticas de privacidade</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Troca e devolução</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Segurança</a></li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="list-footer">
+        <div class="service">
+          <h3>Atendimento</h3>
+            <ul>
+              <li><a href="https://wa.me/14999999999" target="_blank" rel="noopener noreferrer">(11) 99999-9999 </a></li>
+              <li><a href="mailto:hp@coderhouse.com">hp@coderhouse.com</a></li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="list-footer">
+        <div class="social-medias">
+        <h3>Redes Sociais</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="http://www.twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="http://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="last-text">
+      <p>Copyright © 2023</p>
+    </div>
   </footer>
+  <!-- Fim Footer -->
+
 </body>
 </html>
